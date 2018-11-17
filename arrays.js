@@ -4,3 +4,6 @@ var element = "foo"
 function addElementToBeginningOfArray(array, element) {
   return[element, ...array]
 }
+function destructivelyAddElementToBeginningofArray(array, element) {
+  return[array.unshift]
+}
